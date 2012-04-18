@@ -11,5 +11,5 @@ clean:
 deps:
 	npm install -g coffee-script coffeelint uglify-js nodeunit
 
-deploy:
+deploy: all
 	rsync -avz --exclude .git ./ pumpkin:/var/www/jart/long-s.org/

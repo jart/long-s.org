@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Long-S Tranſlator</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Tranſlates modern engliſh into vintage engliſh uſing ligatures, traditional ſpellings, and the long s" />
+  <link rel="canonical" href="http://long-s.org/" />
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="longs.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body class="design {% block body_class %}{% endblock %}">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <h1><small>VINTAGE ENGLISH</small><br />LONG S TRANSLATOR</h1>
+        <p>The <a href="http://en.wikipedia.org/wiki/Long_s">Long S</a> is the claſſieﬅ repreſentation of the letter s at the beginning and middle of a word (with ſome exceptions). While common in print until the end of the 18th century, the long s has ſeen a recent reſurgence amongﬅ hipﬅers ſeeking greater authenticity in their engliſh orthography and typography.</p>
+      </div>
+      <div class="howitworks span6">
+        <br /><br />
+        <h2>How It Works</h2>
+        <p>Long S: success → <u>ſ</u>ucce<u>ſ</u>s</p>
+        <p>Ligatures: insufflate → in<u>ſ</u>ufflate → inſu<u>ﬄ</u>ate</p>
+        <p>Spelling: estrogen → oestrogen → oeſtrogen → œﬅrogen</p>
+        <!-- <p>Middle Engliſh: you shall not pass! → thou ſhan't paſs!</p> -->
+      </div>
+    </div> <!-- /row -->
+    <div class="row">
+      <div class="span6">
+        <h2>Input Text</h2>
+        <textarea id="intext"></textarea>
+      </div> <!-- /span6 -->
+      <div class="span6">
+        <h2>Translated Text</h2>
+        <textarea id="outtext"></textarea>
+      </div> <!-- /span6 -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+  <script src="lib/jquery-1.7.2.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vintage.min.js?v=1"></script>
+  <script src="longs.min.js?v=1"></script>
+</body>
+</html>

@@ -66,12 +66,17 @@ exports.testUnamerican = (test) ->
   test.done()
 
 exports.testTranslate = (test) ->
-  test.equal vintage.translate('blobio!'), 'blobio!'
-  test.equal vintage.translate('old english'), 'olde engliſh'
-  test.equal vintage.translate('...'), "…"
-  test.equal vintage.translate('hello...'), "hello…"
-  test.equal vintage.translate('i want---candy'), "i want—candy"
-  test.equal vintage.translate('i want -- candy'), "i want – candy"
+  transforms = [
+    vintage.unamerican, vintage.long_s, vintage.ligatures
+    vintage.punctuation, vintage.spellings
+  ]
+  tr = (text) -> vintage.translate(text, transforms)
+  test.equal tr('blobio!'), 'blobio!'
+  test.equal tr('old english'), 'olde engliſh'
+  test.equal tr('...'), "…"
+  test.equal tr('hello...'), "hello…"
+  test.equal tr('i want---candy'), "i want—candy"
+  test.equal tr('i want -- candy'), "i want – candy"
   test.done()
 
 exports.testMiddleEnglish = (test) ->

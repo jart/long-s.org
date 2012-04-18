@@ -4415,7 +4415,7 @@ dsplit = (text) ->
 
 
 def_transforms = [
-  spellings, contractions, unamerican, long_s, ligatures, punctuation
+  unamerican, long_s, ligatures, punctuation
 ]
 
 all_transforms = [
@@ -4448,6 +4448,7 @@ exports?.ligatures = ligatures
 exports?.spellings = spellings
 exports?.contractions = contractions
 exports?.unamerican = unamerican
+exports?.punctuation = punctuation
 exports?.middle_english = middle_english
 exports?.def_transforms = def_transforms
 exports?.all_transforms = all_transforms

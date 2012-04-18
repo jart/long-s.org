@@ -12,4 +12,4 @@ deps:
 	npm install -g coffee-script coffeelint uglify-js nodeunit
 
 deploy:
-	rsync -avz ./ pumpkin:/var/www/jart/long-s.org/
+	rsync -avz --exclude .git ./ pumpkin:/var/www/jart/long-s.org/

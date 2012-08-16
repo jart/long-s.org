@@ -4058,6 +4058,7 @@ unamerican_e_oe = oneword
   "edema": "oedema"
   "esophagus": "oesophagus"
   "estrogen": "oestrogen"
+  "ether": "aether"
   "fetal": "foetal"
   "fetid": "foetid"
   "fetus": "foetus"
@@ -4316,6 +4317,8 @@ unamerican = (w) ->
 middle_english_grammar = multiword
   'have you': 'hast thou'
   "you should": "thou shalt"
+  "you will": "thou wilst"
+  "you would": "thou wouldst"
   'you are': 'thou art'
   'are you': 'art thou'
   'you have': 'thou hast'
@@ -4347,6 +4350,7 @@ middle_english_grammar = multiword
   'shall not': "shan't"
   'will not': "shan't"
   "won't": "shan't"
+  "is yours": "is thine"
   "take your": "take thine"
   "your": "thy"
   "yours": "thine"
@@ -4415,7 +4419,8 @@ dsplit = (text) ->
 
 
 def_transforms = [
-  unamerican, long_s, ligatures, punctuation
+  middle_english, punctuation, spellings, unamerican, long_s, ligatures
+  # contractions, unamerican, long_s, ligatures, punctuation
 ]
 
 all_transforms = [

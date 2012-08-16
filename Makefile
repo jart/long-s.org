@@ -13,3 +13,11 @@ deps:
 
 deploy: all
 	rsync -avz --exclude .git ./ pumpkin:/var/www/jart/long-s.org/
+
+upgrade-static:
+	mkdir -p lib
+	rm -rf lib/bootstrap
+	wget http://twitter.github.com/bootstrap/assets/bootstrap.zip
+	unzip bootstrap.zip
+	rm bootstrap.zip
+	mv bootstrap lib

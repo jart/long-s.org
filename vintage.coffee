@@ -4051,7 +4051,7 @@ unamerican_er_re = oneword
   'reconnoiter': 'reconnoitre'
 
 
-unamerican_e_oe = oneword
+unamerican_e_oe_a_ae = oneword
   "ameba": "amoeba"
   "amebae": "amoebae"
   "diarrhea": "diarrhoea"
@@ -4068,6 +4068,24 @@ unamerican_e_oe = oneword
   "homeopathy": "homoeopathy"
   'maneuver': 'manoeuver'
   "pyorrhea": "pyorrhoea"
+  "encyclopedia": "encyclopaedia"
+  "gynecologist": "gynaecologist"
+  "gynecology": "gynaecology"
+  "hemoglobin": "haemoglobin"
+  "feces": "faeces"
+  "demon": "daemon"
+  "anesthesia": "anaesthesia"
+  "anemia": "anaemia"
+  "antenna": "antennae"
+  "medieval": "mediaeval"
+  "orthopedic": "orthopaedic"
+  "pediatric": "paediatric"
+  "salmonella": "salmonellae"
+  "vulva": "vulvae"
+  "vagina": "vaginae"
+  "uvula": "uvulae"
+  "tarantula": "tarantulae"
+  "trachea": "tracheae"
 
 
 unamerican_z = oneword
@@ -4309,7 +4327,7 @@ unamerican_z = oneword
 unamerican = (w) ->
   """Reverse pointless American spelling reforms"""
   w = unamerican_o_ou w
-  w = unamerican_e_oe w
+  w = unamerican_e_oe_a_ae w
   w = unamerican_er_re w
   w = unamerican_z w
 
